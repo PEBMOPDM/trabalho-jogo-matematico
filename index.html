@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<HTML lang="pt-BR"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Matematica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo de Matematica</h1>
+        <p>escolha o modo do jogo</p>
+        <button onclick="iniciarJogo('basico')">Modo Basico</button>
+        <button onclick="iniciarJogo('desafio')">Modo Desafio</button>
+        <div id="area-jogo" style="display: none;">
+            <p id="pergunta"></p>
+            <input type="number" id="resposta"  placeholder="Digite sua resposta">
+            <button onclick="verificarResposta()">Responder </button>
+            <p> id="resultado"> </p>
+            <button onclick="novaPergunta()">Nova Pergunta</button>
+            <p>Pontuação: <span id="pontuação">0</span></p>
+        </div>
+    </div>
+</body>
+</HTML>
